@@ -63,7 +63,7 @@ all: $(PRODUCT)
 
 # This special "target" will remove the binary and all intermediate files.
 clean::
-	rm -f $(OBJ) $(PRODUCT) .buildmode 
+	rm -f $(OBJ) $(PRODUCT) .buildmode *core.$(PRODUCT)* 
 
 # This rule generates a list of object names.  Each of your source files (but
 # not your header files) produces a single object file when it's compiled.  In
